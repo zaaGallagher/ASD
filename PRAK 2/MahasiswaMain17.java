@@ -14,6 +14,10 @@ class MahasiswaMain17 {
         Mahasiswa17 mhs2 = new Mahasiswa17("Annisa Nabila","2141720160",3.25,"TI 2L");
         mhs2.updateIpk(3.30);
         mhs2.tampilkanInformasi();
+
+        Mahasiswa17 mhsAnnisa = new Mahasiswa17("Annisa Nabila", "2141720160", 3.25, "TI 2L");
+        System.out.println("Hasil Kinerja: " + mhsAnnisa.nilaiKinerja());
+        mhsAnnisa.tampilkanInformasi();
       
     }
 }
