@@ -1,21 +1,25 @@
-public class Mahasiswa17 {
-    String nim, nama, kelas;
+package WEEK12;
+
+public class mahasiswa17 {
+    String nim;
+    String nama;
+    String kelas;
     double ipk;
 
-    public Mahasiswa17() {
+    public mahasiswa17(String nim, String nama, String kelas, double ipk) {
+        this.nim = nim;
+        this.nama = nama;
+        this.kelas = kelas;
+        this.ipk = ipk;
     }
 
-    public Mahasiswa17(String nm, String name, String kls, double ip) {
-        this.nim = nm;
-        this.nama = name;
-        this.kelas = kls;
-        this.ipk = ip;
+    public void tampil() {
+        System.out.println(
+                "NIM     : " + nim +
+                        "\nNama  : " + nama +
+                        "\nKelas : " + kelas +
+                        "\nIPK   : " + ipk);
+        System.out.println("-------------------------");
     }
 
-    public void tampilInformasi() {
-        System.out.println("Nama  : " + nama);
-        System.out.println("NIM   : " + nim);
-        System.out.println("Kelas : " + kelas);
-        System.out.println("IPK   : " + ipk);
-    }
 }
